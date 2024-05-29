@@ -10,6 +10,8 @@ Model2: This model is a more general object detection model that identifies obje
 
 Also, an alert sound and a logging function is added to the project. When the "tanimlanamayan nesne." appears on the screen, an alert sound plays. On the other hand, logging function is used to log every detected object in the image in real-time in a text file on our computer.
 
+![](https://github.com/OmerGnscr/ESP32Cam-Object-Detection-Project/blob/main/images/detections.png)
+
 ### Explaination of the code
 
 These are the necessary libraries that are used in project.
