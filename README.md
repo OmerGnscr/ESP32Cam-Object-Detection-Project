@@ -62,6 +62,8 @@ logging.basicConfig(filename=log_dosya, level=logging.INFO, format='[%(asctime)s
 - **sound_file:** A sound file that runs when the unidentified objects are detected.
 - **start_time , log_dosya , basicConfig():** These are used to configuring the logging function.
 
+![](https://github.com/OmerGnscr/ESP32Cam-Object-Detection-Project/blob/main/images/WebServer.png)
+
 ```python
 def CamAyar():
     # Goruntunun boyutunu belirler. (Default: 640x480)
@@ -182,6 +184,8 @@ If an unidentified (”tanimlanamayan nesne”) is detected, it sets “play__so
 If there are any counts (detected objects), it logs it to a text file. 
 
 If play_sound is True, it plays the sound file.
+
+![](https://github.com/OmerGnscr/ESP32Cam-Object-Detection-Project/blob/main/images/logs.png)
 
 ```python
         # Her bir class için ekrana text yazdırır
