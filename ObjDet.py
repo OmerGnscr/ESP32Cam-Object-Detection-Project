@@ -144,9 +144,7 @@ def main():
                 labels=labels2
             )
 
-            # Confidence %50'den fazla olanlari ekrana yazdir
-            if count >= 0.5:
-                cv2.putText(image, f"{count} tane {class_name} bulundu!", (50, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
+            cv2.putText(image, f"{count} tane {class_name} bulundu!", (50, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
         cv2.imshow("Multidisciplinary Project", image) # Pencerenin adi
 
