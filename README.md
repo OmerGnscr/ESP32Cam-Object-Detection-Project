@@ -133,6 +133,9 @@ This loop continuously captures images from the ESP32CAM. It sends a request to 
 This part of code runs object detection on the captured image using both YOLO models.
 
 “result1” and “result2” variables store the detection results from the two models. Then, the results are converted into a format that is compatible with SuperVision library. An object might be detected by both models at the same time. In order to avoid duplicates, some certain classes from model2 are excluded. And, detections2_filtered filters out the excluded classes from the second model's detections.
+The parameter agnostic_nms refers to "class-agnostic non-maximum suppression." This concept is 
+used in object detection to refine the set of detected bounding boxes by
+ eliminating redundant boxes. When an object detection model makes predictions, it often detects the same object multiple times with slightly different bounding boxes. NMS helps to remove these redundant detections and keep only the most confident ones. NMS algorithm will treat all detected objects as if they belong to the same class. This can be useful in situations where you want to ensure that overlapping detections of different classes are also suppressed.
 
 ```python
         # Kac tane oldugunu saymak icin gerekli
